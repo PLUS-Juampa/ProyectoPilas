@@ -58,7 +58,42 @@ public class Pilas {
         }
     }
 
-    
+    public void maximo() {
+        Nodo temp = top;
+        int max = 0;
+        if (temp != null) {
+            while (temp != null) {
+                if (temp.getValor() > max) {
+                    max = temp.getValor();
+                }
+                temp = temp.getProx();
+            }
+
+            System.out.println("Valor máximo: " + max);
+        }
+        else {
+            System.out.println("La pila está vacía");
+        }
+    }
+
+    public void minimo(){
+        Nodo temp = top;
+        int min = 100;
+        if (temp != null) {
+            while (temp != null) {
+                if (temp.getValor() < min) {
+                    min = temp.getValor();
+                }
+                temp = temp.getProx();
+            }
+
+            System.out.println("Valor minimo: " + min);
+        }
+        else {
+            System.out.println("La pila está vacía");
+        }
+
+    }
 
 }
 
