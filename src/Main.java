@@ -72,7 +72,7 @@ public class Main {
                     break;
                 }
                 case "8": {
-                    System.out.println("\n¡Hasta luego!");
+                    System.out.println("\n*** Hasta luego ***");
                     System.exit(0);
                     break;
                 }
