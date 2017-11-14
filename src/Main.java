@@ -53,6 +53,11 @@ public class Main {
                 }
                 case "4": {
                     System.out.println("*** Eliminar ***");
+                    p.peek();
+                    System.out.println("Que elememto desea eliminar?");
+                    int j = sc.nextInt();
+                    if(j=Null)
+                    p.pop();
                     System.out.println("\n");
                     break;
                 }
