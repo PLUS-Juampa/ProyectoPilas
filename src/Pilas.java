@@ -4,6 +4,7 @@
 public class Pilas {
 
     private Nodo top;
+    private int size;
 
     public Pilas() {
         top = null;
@@ -24,7 +25,12 @@ public class Pilas {
             nuevoNodo.setProx(top);
             top = nuevoNodo;
         }
+        size++;
 
+    }
+
+    public int getSize(){
+        return size;
     }
 
     public void peek() {
@@ -205,7 +211,7 @@ public class Pilas {
             // Asigna como primer nodo al siguiente de la pila.
             top = top.getProx();
             // Decrementa el contador del tamaño de la pila
-            //tamanio--;
+            size--;
         }
     }
 

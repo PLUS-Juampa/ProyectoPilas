@@ -75,6 +75,7 @@ public class Main {
                 }
                 case "5": {
                     System.out.println("*** Tamaño ***");
+                    System.out.println("El tamaño de la Pila es: " + p.getSize());
                     System.out.println("\n");
                     break;
                 }
