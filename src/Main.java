@@ -48,12 +48,29 @@ public class Main {
                 }
                 case "3": {
                     System.out.println("*** Buscar ***");
-                    System.out.println("\n");
+                    System.out.println("Digite nùmero a buscar");
+                    try {
+                        String numBuscar = sc.nextLine();
+                        p.buscar(Integer.parseInt(numBuscar));
+                    }catch (Exception e){
+                        System.out.println("\n\tDebe ingresar un número entero\n");
+                    }
                     break;
                 }
                 case "4": {
                     System.out.println("*** Eliminar ***");
-                    System.out.println("\n");
+                    System.out.println("Digite número a eliminar");
+                    try {
+                        String numEliminar = sc.nextLine();
+                        if(p.eliminar(Integer.parseInt(numEliminar))){
+                            System.out.println("\n\t*** Número Eliminado ***\n");
+                        }else {
+                            System.out.println("\n\t*** Número inexistente en Pila ***\n");
+                        }
+                    }catch (Exception e){
+                        System.out.println("\n\t*** Debe ingresar sólo números ***\n");
+                    }
+
                     break;
                 }
                 case "5": {
