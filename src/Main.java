@@ -80,11 +80,13 @@ public class Main {
                 }
                 case "6": {
                     System.out.println("*** Máximo ***");
+                    p.maximo();
                     System.out.println("\n");
                     break;
                 }
                 case "7": {
                     System.out.println("*** Mínimo ***");
+                    p.minimo();
                     System.out.println("\n");
                     break;
                 }

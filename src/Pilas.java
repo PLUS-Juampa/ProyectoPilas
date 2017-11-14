@@ -95,6 +95,7 @@ public class Pilas {
 
     }
 
+
     public void buscar(int referencia){
         // Crea una copia de la pila.
         Nodo aux = top;
@@ -207,6 +208,7 @@ public class Pilas {
             //tamanio--;
         }
     }
+
 
 }
 
