@@ -15,7 +15,7 @@ public class Pilas {
     }
 
     public void push(int valor) {
-
+        // Método para agregar un nuevo elemento a la Pila
         Nodo nuevoNodo;
 
         if (vacia()) {
@@ -28,12 +28,12 @@ public class Pilas {
         size++;
 
     }
-
+    // Método para devolver el tamaño de la Pila
     public int getSize(){
         return size;
     }
 
-    public void peek() {
+    public void peek() {    // Método para poder leer los elementos dentro de la Pila
         Nodo temp = top;
         if (temp != null) {
             System.out.println("La pila es: ");
@@ -47,7 +47,7 @@ public class Pilas {
         }
     }
 
-    public void cima() {
+    public void cima() {    // Método para mostrar el valor que se encuentra en posición cero de la Pila
         if (!vacia()) {
             System.out.println("Cima: " + top.getValor());
         } else {
@@ -55,7 +55,7 @@ public class Pilas {
         }
     }
 
-    public void pop() {
+    public void pop() { // Método para eliminar el valor que se encuentra en posición cero de la Pila
         if (!vacia()) {
             System.out.println("Dato extraído: " + top.getValor());
             top = top.getProx();
@@ -64,7 +64,7 @@ public class Pilas {
         }
     }
 
-    public void maximo() {
+    public void maximo() {  //  Método para mostrar el valor máximo dentro de la Pila
         Nodo temp = top;
         int max = 0;
         if (temp != null) {
@@ -82,7 +82,7 @@ public class Pilas {
         }
     }
 
-    public void minimo(){
+    public void minimo(){      // Método para mostrar el valor mínimo dentro de la Pila
         Nodo temp = top;
         int min = 100;
         if (temp != null) {
